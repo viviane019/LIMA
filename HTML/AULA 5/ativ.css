@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0; /* fundo cinza claro */
+    color: #222; /* texto escuro para contraste */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #ff6ec7; /* rosa vibrante */
+    font-size: 2rem;
+}
+
+header p {
+    color: #000000; /* azul mais escuro */
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Galeria estilo Netflix */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff; /* fundo claro do card */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 110, 199, 0.3), 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Títulos dos cards */
+.card h2 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #ff6ec7; /* rosa */
+}
+
+/* Parágrafos dos cards */
+.card p {
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ff6ec7;
+}
+
+footer a {
+    color: #0077b6;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ff6ec7;
+}
