@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* Problemas com acentuação */
+h2 {
+    color: blueviolet;
+}
+
+body {
+    background-color: beige;
+    font-family: Karla;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@fonte-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: lemonchiffon';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
