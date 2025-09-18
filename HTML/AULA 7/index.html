@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        article#caixa {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2); /* Sombra aqui */
+            box-shadow: 3px 5px 4px black;
+            border-radius: 10px 30px;
+        }
+        h1 {
+            width: 300px;
+            height: 50px;
+                background-color: lightgray;
+                border-width: 10px;
+                border-style: solid;
+                border-color: red;
+                padding: 20px;
+                outline-width: 30px;
+                outline-style: solid;
+                outline-color: blue;
+                margin: 50px;
+
+            }
+
+            h2{
+                border:10px solid red;
+                outline: 30px solid blue;
+            }
+        </style>
+</head>
+<body>
+   
+   <header>
+        <h1>Containers</h1>
+        <br>
+        <h1>block level</h1>
+        <br>
+        <nav>link</nav>
+   </header>
+
+   <main>
+    <section>
+        <p>Sessão 1</p>
+        <article id="caixa">
+            <p>Sub sessão</p>
+            <aside>
+                <p>Sub Sub Sessão</p>
+            </aside>
+        </article>
+    </section>
+   </main>
+
+</body>
+</html>

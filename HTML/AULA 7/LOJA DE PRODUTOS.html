@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+   /* Fonte e base em preto e branco */
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #1a1a1a;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+}
+
+/* Container central */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.main-header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+.main-header p {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Galeria */
+.product-gallery {
+    padding: 50px 0;
+}
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+/* Cards */
+.product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+    border: 1px solid #e0e0e0;
+}
+.product-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-color: #000;
+}
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.category {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+.price {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* Botão comprar */
+.add-to-cart-btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+.add-to-cart-btn:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Botão carrinho */
+.cart-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    z-index: 1000;
+    border: 2px solid #000;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.cart-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.main-footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+.footer-links a, .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: opacity 0.2s;
+}
+.footer-links a:hover, .social-media a:hover {
+    opacity: 0.7;
+}
+.newsletter input[type="email"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 1em;
+}
+.newsletter button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background : 0.3s ease; 
+}
+.newsletter button:hover {
+    background: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        min-width: 90%;
+    }
+    .cart-btn {
+        top: unset;
+        bottom: 30px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Carrinho fixo -->
+    <a href="carrinho.html" class="cart-btn" title="Ver Carrinho">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+    <header class="main-header">
+        <div class="container">
+            <h1>Vitrine 2025</h1>
+            <p>Descubra o futuro da moda com nossa coleção exclusiva, onde inovação e estilo se encontram.</p>
+        </div>
+    </header>
+    <main class="product-gallery">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="product-carousel">
+                <!-- Roupas -->
+                <div class="product-card">
+                    <img src="Bolsa.jpg" alt="Jaqueta de Couro Minimalista">
+                    <h3>Jaqueta de Couro Minimalista</h3>
+                    <p class="category"><i class="fas fa-tshirt"></i> Roupas</p>
+                    <p class="price">R$ 450,00</p>
+                    <p class="description">Estilo atemporal com design moderno e elegante.</p>
+                    <a href="#" class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</a>
+                </div>
+                <!-- Perfumes -->
+                <div class="product-card">
+                    <img src="Sublime.jpg" alt="Perfume Sublime Essence">
+                    <h3>Perfume Sublime Essence</h3>
+                    <p class="category"><i class="fas fa-spray-can-sparkles"></i> Perfumes</p>
+                    <p class="price">R$ 290,00</p>
+                    <p class="description">Uma fragrância única para todas as ocasiões.</p>
+                    <a href="#" class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</a>
+                </div>
+                <!-- Bolsas -->
+                <div class="product-card">
+                    <img src="Bolsa.jpg" alt="Bolsa Elegance Dourada">
+                    <h3>Bolsa Elegance Dourada</h3>
+                    <p class="category"><i class="fas fa-bag-shopping"></i> Bolsas</p>
+                    <p class="price">R$ 620,00</p>
+                    <p class="description">Sofisticação e praticidade em cada detalhe.</p>
+                    <a href="#" class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</a>
+                </div>
+                <!-- Acessórios -->
+                <div class="product-card">
+                    <img src="oculos.jpg" alt="Óculos Vision 2025">
+                    <h3>Óculos Vision 2025</h3>
+                    <p class="category"><i class="fas fa-glasses"></i> Acessórios</p>
+                    <p class="price">R$ 320,00</p>
+                    <p class="description">Design futurista com proteção total UV.</p>
+                    <a href="#" class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</a>
+                </div>
+            
+       
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+            <div class="social-media">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <form>
+                    <label for="newsletter-email" style="color:#fff;">Receba novidades:</label>
+                    <input type="email" id="newsletter-email" placeholder="Seu e-mail" required>
+                    <button type="submit"><i class="fas fa-envelope"></i> Inscrever</button>
+                </form>
+            </div>
+            <p style="margin-top:20px;">&copy; 2025 Vitrine 2025. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
