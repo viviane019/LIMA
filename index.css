@@ -1,0 +1,16 @@
+:root {
+    --cor0: pink ;
+    --cor1: purple ;
+    --forte0: Arial ;
+}
+
+body {
+    font-family: var(--forte0);
+    color: var(--cor0);
+    line-height: 1.5em;
+    font-family: var();
+}
+
+h1 {
+    text-shadow: 2px 2px 0px rgb(0,0,0,0.466);
+}
